@@ -1,0 +1,90 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.casino-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 20px red, 0 0 30px yellow;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px red, 0 0 30px yellow;
+  }
+  to {
+    text-shadow: 0 0 30px yellow, 0 0 50px red;
+  }
+}
+
+.credit-panel p {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.reel {
+  width: 100px;
+  height: 150px;
+  border: 3px solid gold;
+  background-color: #222;
+  margin: 0 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px gold;
+}
+
+.reel div {
+  font-size: 60px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  animation: smooth-spin 1s ease-out;
+}
+
+.paytable {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 0 0 15px gold;
+}
+
+.paytable h2 {
+  margin: 0 0 10px;
+  color: gold;
+  text-decoration: underline;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background-color: red;
+  color: white;
+}

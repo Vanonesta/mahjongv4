@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahjong Slot Machine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Musik Latar -->
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="assets/sounds/background-music.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spinSound">
+    <source src="assets/sounds/spin-sound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="winSound">
+    <source src="assets/sounds/win-sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1 class="casino-title">Mahjong Slot Machine</h1>
+    <div class="credit-panel">
+      <p>Kredit: <span id="credits">500</span></p>
+      <p>Jackpot: <span id="jackpot">10000</span></p>
+      <p>Total Taruhan: <span id="totalBet">10</span></p>
+      <label for="betAmount">Taruhan per Payline:</label>
+      <select id="betAmount">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+
+    <div class="slot-machine">
+      <div class="reel" id="reel1"></div>
+      <div class="reel" id="reel2"></div>
+      <div class="reel" id="reel3"></div>
+    </div>
+
+    <div class="controls">
+      <button id="spinButton">Spin</button>
+      <button id="maxBetButton">Max Bet</button>
+      <button id="autoSpinButton">Auto Spin</button>
+      <button id="turboButton">Turbo Mode</button>
+      <button id="toggleMusic">Matikan Musik</button>
+    </div>
+
+    <div class="paytable">
+      <h2>Pay Table</h2>
+      <p><img src="assets/images/mahjong1.png" alt="Mahjong 1"> x3 = 100</p>
+      <p><img src="assets/images/mahjong2.png" alt="Mahjong 2"> x3 = 200</p>
+      <p><img src="assets/images/mahjong3.png" alt="Mahjong 3"> x3 = 500</p>
+      <p><img src="assets/images/mahjong4.png" alt="Mahjong 4"> x3 = 1000</p>
+      <p><img src="assets/images/mahjong5.png" alt="Mahjong 5"> x3 = 5000</p>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
